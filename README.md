@@ -1,1 +1,1 @@
-# digital-business
+# Static pages for Digital Business 
