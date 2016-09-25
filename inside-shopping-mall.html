@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="js-no ie9"> <![endif]-->
+<!--[if IE 10]> <html lang="en" class="js-no ie10"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <title>Digital Business | IoT device | Beacon</title>
+
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Jiri Cermak">
+
+    <!--  Boostrap Framework  -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--=== CSS - Dragonfly ===-->
+    <link href="assets/css/themes/light-blue.css" rel="stylesheet" id="colors">
+
+    <!--=== LESS - Dragonfly ===-->
+    <!--<link href="assets/less/main.less" rel="stylesheet/less">-->
+
+    <!-- Google Fonts - Lato -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- CSS Animations -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet">
+
+    <!--  Slippry Slideshow -->
+    <link href="assets/css/slippry.min.css" rel="stylesheet">
+    <style>
+        .shopping-mall-title-background {
+          background-image:url("assets/img/shopping-mall-title.png");
+        }
+        .bg-filter {
+          background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0
+        }
+        .img-align-center {
+          margin-left: auto;;
+          margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--===    NAVBAR     ===-->
+    <nav class="navbar navbar-trn navbar-fixed-top" role="navigation" id="navbarSettings">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Digital<span class="text-primary">Business</span></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right ">
+
+                    <!--Home Pages -->
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0">Home</a>
+                    </li>
+
+                    <!--Solutions-->
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0">Solutions</a>
+                    </li>
+
+                    <!--Case Study-->
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0">Case Study</a>
+                    </li>
+
+                    <!-- Contact Us -->
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0">Contact Us</a>
+                    </li>
+                    <!-- Sidebar -->
+                    <li class="dropdown hidden-xs">
+                        <a href="javascript:void(0);" id="sidebar-btn">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+    <!-- If navbar is fixed to top and it has the class navbar-default or navbar-inverse this div will add space below the navbar-->
+    <div id="navbarSpaceBottom"></div>
+    <!--===/END    Navbar     ===-->
+
+
+    <!--===    HEADER     ===-->
+    <section class="shopping-mall-title-background bg-center bg-cover">
+        <div class="bg-filter">
+            <div class="container section-lg">
+                <h1 class="top-title">Shopping Mall</h1>
+            </div>
+        </div>
+    </section>
+    <!--===/END      HEADER     ===-->
+
+    <section class="section-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="1s">
+                    <div class="text-center">
+                        <i class="fa fa-search icon-o"></i>
+                        <h3 class="text-primary">Recognition</h3>
+                        <p class="text-grey">Fusce aliquam vestibulum ipsum.
+                            <br>Aenean vel massa quis mauris vehicula.</p>
+                    </div>
+                    <div class="space visible-xs visible-sm"></div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="1.1s">
+                    <div class="text-center">
+                        <i class="fa fa-paper-plane-o icon-o"></i>
+                        <h3 class="text-primary">Precise Promotion</h3>
+                        <p class="text-grey">Fusce aliquam vestibulum ipsum.
+                            <br>Aenean vel massa quis mauris vehicula.</p>
+                    </div>
+                    <div class="space visible-xs visible-sm"></div>
+                </div>
+                <div class="col-md-3 col-sm-6  wow fadeIn" data-wow-delay="1.2s">
+                    <div class="text-center">
+                        <i class="fa fa-comments-o icon-o"></i>
+                        <h3 class="text-primary">Interaction</h3>
+                        <p class="text-grey">Fusce aliquam vestibulum ipsum.
+                            <br>Aenean vel massa quis mauris vehicula.</p>
+                    </div>
+                    <div class="space visible-xs"></div>
+                </div>
+                <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="1.3s">
+                    <div class="text-center">
+                        <i class="fa fa-line-chart icon-o"></i>
+                        <h3 class="text-primary">Data Analysis</h3>
+                        <p class="text-grey">Fusce aliquam vestibulum ipsum.
+                            <br>Aenean vel massa quis mauris vehicula.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="container section text-center">
+        <h2 class="big-title">Contact us, get a free advice</h2>
+        <p class="big-subtitle">We help you expand your business and enter new markets</p>
+        <div class="space-md"></div>
+        <a href="#" class="btn btn-success btn-xlg">Request a solution</a>
+    </section>
+
+    <!--===    MAIN WRAP     ===-->
+    <section class="section-lg bg-grey">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 wow fadeInLeft">
+                  <h3>Who are entering in</h3>
+                  <p>Aliquam eget ante non quam sagittis mollis. In nec varius nisi, nec pharetra nisi</p>
+                  <p>. Curabitur ut est velit. Aenean at molestie sem a mattis tellus est sit amet neque.</p>
+                  <p>The right side should show an image that indicate we recognize a member</p>
+                  <div class="space-sm"></div>
+                  <div class="space visible-xs"></div>
+                </div>
+                <div class=" col-sm-6 wow fadeInRight">
+                    <img class="img-mh450" src="assets/img/member-recognize.jpg" alt="Flat showcase presentation">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section-lg">
+        <div class="container">
+            <div class="row">
+                <!--fadeInLeft-->
+                <div class=" col-sm-6 wow fadeInLeft">
+                    <img class="img-mh450" src="assets/img/precise-promotion.jpg" alt="Flat showcase presentation">
+                </div>
+
+                <div class="col-sm-6 wow fadeInRight">
+                  <h3>What they like</h3>
+                  <p>Aliquam eget ante non quam sagittis mollis. In nec varius nisi, nec pharetra nisi</p>
+                  <p>. Curabitur ut est velit. Aenean at molestie sem a mattis tellus est sit amet neque.</p>
+                  <div class="space-sm"></div>
+                  <div class="space visible-xs"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-lg bg-grey">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 wow fadeInLeft">
+                  <h3>What they want to know</h3>
+                  <p>Aliquam eget ante non quam sagittis mollis. In nec varius nisi, nec pharetra nisi</p>
+                  <p>. Curabitur ut est velit. Aenean at molestie sem a mattis tellus est sit amet neque.</p>
+                  <div class="space-sm"></div>
+                  <div class="space visible-xs"></div>
+                </div>
+                <div class=" col-sm-6 wow fadeInRight">
+                    <img class="img-mw450" src="assets/img/scan-product.png" alt="Flat showcase presentation">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section-lg">
+        <div class="container">
+            <div class="row">
+                <!--fadeInLeft-->
+                <div class=" col-sm-6 wow fadeInLeft">
+                    <img class="img-mh450" src="assets/img/shopping-mall-navigation.jpg" alt="Flat showcase presentation">
+                </div>
+
+                <div class="col-sm-6 wow fadeInRight">
+                  <h3>Where they want to go</h3>
+                  <p>Aliquam eget ante non quam sagittis mollis. In nec varius nisi, nec pharetra nisi</p>
+                  <p>. Curabitur ut est velit. Aenean at molestie sem a mattis tellus est sit amet neque.</p>
+                  <div class="space-sm"></div>
+                  <div class="space visible-xs"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-lg bg-grey">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 wow fadeInLeft">
+                  <h3>How can improve</h3>
+                  <p>Aliquam eget ante non quam sagittis mollis. In nec varius nisi, nec pharetra nisi</p>
+                  <p>. Curabitur ut est velit. Aenean at molestie sem a mattis tellus est sit amet neque.</p>
+                  <div class="space-sm"></div>
+                  <div class="space visible-xs"></div>
+                </div>
+                <div class=" col-sm-6 wow fadeInRight">
+                    <img class="img-mw450" src="assets/img/shopping-mall-data-analysis.png" alt="Flat showcase presentation">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section-lg text-center">
+      <div class="input-group form-lg center-block" role="search" style="width: 400px;">
+        <input type="text" class="form-control" placeholder="Enter your email">
+        <span class="input-group-btn">
+          <button type="submit" class="btn btn-primary">
+              Free Consulting!</button>
+        </span>
+      </div>
+    </section>
+
+    <section class="section-lg bg-grey">
+        <h3 class="big-title text-center">Our Customers</h3>
+        <div class="space"></div>
+        <div class="container">
+            <div class="row client-logo">
+                <img alt="logo of client - Grank Green" src="https://frankgreen.com.au/skin/frontend/default/default/images/frank_green.png">
+
+                <img alt="logo of client - Shinetech" src="http://www.shinetechchina.com.cn/images/logo.png">
+
+                <img alt="logo of client - 7-11" src="http://ww1.prweb.com/prfiles/2010/05/02/222634/711Logo.jpg">
+            </div>
+        </div>
+    </section>
+    <!--===/END    MAIN WRAP     ===-->
+
+
+    <!--===    SCRIPTS     ===-->
+
+    <!--Back to top-->
+    <a href="#" class="back-to-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+
+    <!-- Modernizr -->
+    <script src="assets/js/min/modernizr.custom.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="assets/js/min/jquery.min.js"></script>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap Plugin - open dropdown on hover -->
+    <script src="assets/js/min/bootstrap-hover-dropdown.min.js"></script>
+
+    <!-- LESS preprocessor -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/1.7.4/less.min.js"></script>
+
+    <!-- WOW.js - loading animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.6/wow.min.js"></script>
+
+    <!-- Knobs - our skills -->
+    <script src="https://cdn.jsdelivr.net/jquery.knob/1.2.9/jquery.knob.min.js"></script>
+
+    <!-- Slippry - Slideshow -->
+    <script src="assets/js/min/slippry.min.js"></script>
+
+    <!-- Mixitup plugin - Portfolio Filter Grid -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/1.5.6/jquery.mixitup.min.js"></script>
+
+    <!-- Make sticky whatever elements -->
+    <script src="https://cdn.jsdelivr.net/jquery.sticky/1.0.0/jquery.sticky.min.js"></script>
+
+    <!-- Smooth sroll -->
+    <script src="https://cdn.jsdelivr.net/jquery.nicescroll/3.5.4/jquery.nicescroll.min.js"></script>
+
+    <!-- Contact Form -->
+    <script src="assets/js/min/contact-form.min.js"></script>
+
+    <!-- Must be last of all scripts -->
+    <script src="assets/js/min/scripts.min.js"></script>
+
+    <!--[if lt IE 9]>
+          <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
+          <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!--===/END    SCRIPTS     ===-->
+
+    <!--===    SIDEBAR     ===-->
+    <div class="sidebar-off hidden-xs sidebar">
+        <div class="wrap">
+            <div class="form-lg">
+                <div class="input-group all-trn" role="search">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="input-group-btn">
+                            <button class="btn btn-all-trn" title="Search" type="button">
+                                <i class="fa fa-search"></i>
+                        </button>
+                        </span>
+                </div>
+            </div>
+            <div class="space-sm"></div>
+            <h4>Languages</h4>
+            <ul class="info-list sm-list lang">
+                <li class="active">
+                    <i class="fa fa-angle-right fa-fw"></i>
+                    <a href="#">English</a>
+                    <i class="fa fa-check fa-fw"></i>
+                </li>
+                <li>
+                    <i class="fa fa-angle-right fa-fw"></i>
+                    <a href="#">Germany</a>
+                    <i class="fa fa-check fa-fw"></i>
+                </li>
+                <li>
+                    <i class="fa fa-angle-right fa-fw"></i>
+                    <a href="#">Spanish</a>
+                    <i class="fa fa-check fa-fw"></i>
+                </li>
+                <li>
+                    <i class="fa fa-angle-right fa-fw"></i>
+                    <a href="#">French</a>
+                    <i class="fa fa-check fa-fw"></i>
+                </li>
+            </ul>
+
+            <div class="space"></div>
+
+            <h4>Social Media</h4>
+            <ul class="icons-list circle-icons m-no-bottom">
+                <li>
+                    <a href="#" title="Follow us">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="Follow us">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="Follow us">
+                        <i class="fa fa-tumblr"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="Follow us">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="Follow us">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="space"></div>
+
+            <h4>Contact</h4>
+            <ul class="info-list sm-list">
+                <li>
+                    <i class="fa fa-envelope fa-fw"></i>
+                    <a class="text-muted" href="mailto:influence.bootstrap@gmail.com">support@example.com</a>
+                </li>
+                <li>
+                    <i class="fa fa-phone fa-fw"></i>
+                    +21 902 920 889
+                </li>
+                <li>
+                    <i class="fa fa-map-marker fa-fw"></i>
+                    885 3rd Ave, NY 10022
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--===/END    SIDEBAR     ===-->
+
+    <!--===    FOOTER     ===-->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                        <h4>Contact</h4>
+                        <ul class="info-list md-list i-primary">
+                            <li>
+                                <i class="fa fa-envelope fa-fw"></i>
+                                <a href="mailto:influence.bootstrap@gmail.com">influence.bootstrap@gmail.com</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-phone fa-fw"></i>
+                                +21 902 920 889
+                            </li>
+                            <li>
+                                <i class="fa fa-map-marker fa-fw"></i>
+                                885 3rd Ave, NY 10022
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="space-sm visible-sm visible-xs"></div>
+                    <div class="col-md-4 col-lg-4 col-xs-12">
+                        <h4>Quick Links</h4>
+                        <ul class="info-list md-list i-primary">
+                            <li>
+                                <i class="fa fa-angle-right fa-fw"></i>
+                                <a href="#">
+                                    <span class="link-title">About Us</span>- Who we are</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-right fa-fw"></i>
+                                <a href="#">
+                                    <span class="link-title">Services</span>- What we do</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-right fa-fw"></i>
+                                <a href="#">
+                                    <span class="link-title">Our Team</span>- Meet our team</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-right fa-fw"></i>
+                                <a href="#">
+                                    <span class="link-title">Portfolio</span>- Our work</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-right fa-fw"></i>
+                                <a href="#">
+                                    <span class="link-title">Blog</span>- Breaking news</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="space-sm visible-sm visible-xs"></div>
+                    <div class="col-md-4 col-lg-4  col-xs-12">
+                        <h4>About Us</h4>
+                        <p>Temporibus autem quibusdam et aut officiis debitis ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+                        <div class="space-sm"></div>
+                        <h4>Follow Us</h4>
+                        <ul class="circle-icons icons-list">
+                            <li>
+                                <a href="#" title="Follow us">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Follow us">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Follow us">
+                                    <i class="fa fa-tumblr"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Follow us">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Follow us">
+                                    <i class="fa fa-youtube-play"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2014 Dragonfly. All rights reserved. Theme by Jiri Cermak.</p>
+            </div>
+        </div>
+    </footer>
+    <!--===/END    FOOTER     ===-->
+
+</body>
+
+</html>
