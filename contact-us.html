@@ -37,7 +37,7 @@
     <link href="assets/css/slippry.min.css" rel="stylesheet">
     <style>
       .bg-12 {
-        background-image:url("assets/img/outdoor-ads.jpg");
+        background-image:url("assets/img/contact-us.jpg");
       }
     </style>
 </head>
@@ -62,7 +62,7 @@
 
                     <!--Home Pages -->
                     <li class="dropdown">
-                        <a href="/" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0">Home</a>
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0">Home</a>
                     </li>
 
                     <!--Solutions-->
@@ -93,132 +93,138 @@
     <section class="bg-12 bg-center bg-cover">
         <div class="bg-filter">
             <div class="container section-lg">
-                <h1 class="top-title">Outside Promotion</h1>
+                <h1 class="top-title">Contact Us</h1>
             </div>
         </div>
     </section>
     <!--===/END      HEADER     ===-->
 
-
-    <!--===    MAIN WRAP     ===-->
-    <section class="container section-lg">
-        <!-- Tab panes -->
-        <div class="tab-content">
-            <div class="tab-pane active" id="responsive">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 animated fadeInLeft">
-                        <h2>Let your Ads have eyes</h2>
-                        <div class="space-sm visible-lg"></div>
-                        <p class="text-block">Aliquam eget ante non quam sagittis mollis. In nec varius nisi, nec pharetra nisi. Curabitur ut est velit. Aenean at molestie sem a mattis tellus est sit amet neque.</p>
-                        <p class="text-block">Aenean commodo, ligula ut viverra eleifend, leo urna blandit arcu. Integer placerat tellus eget dolor facilisis, nec malesuada metus tempus.</p>
-                        <div class="space-sm visible-lg"></div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 fadeInRight animated">
-                        <div class="space-lg visible-xs visible-sm"></div>
-                        <img class="img-responsive  center-block " alt="iMac" src="assets/img/outdoor-case-1.png">
+    <section class="bg-grey-3">
+        <div class="container section">
+            <div class="row margin-b30-xs">
+                <div class="col-sm-4">
+                    <div class="float-box center">
+                        <i class="fa fa-map-marker icon-c"></i>
+                        <div class="float-text">
+                            <h4>Our Location</h4>
+                            <p>
+                              Luo Yu Street No. 312<br>
+                            Hong Shan District, Wuhan, China  430079</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="tab-pane" id="fontawesome">
-                <div class="row">
-                    <div class="col-md-6 col-sm-12 animated fadeInLeft">
-                        <h2>We offer the best services</h2>
-
-                        <p class="text-block">Aliquam eget ante non quam sagittis mollis. In nec varius nisi, nec pharetra nisi. Curabitur ut est velit. Aenean at molestie sem a mattis tellus est sit amet neque.</p>
-                        <p class="text-block">Aenean commodo, ligula ut viverra eleifend, leo urna blandit arcu. Integer placerat tellus eget dolor facilisis, nec malesuada metus tempus. Sed ullamcorper tincidunt odio, nec convallis sem iaculis vitae.</p>
-                    </div>
-                    <div class="col-md-6 col-sm-12 fadeInRight animated">
-                        <div class="space-lg visible-xs visible-sm"></div>
-                        <img class="img-responsive  center-block w450" alt="iMac" src="assets/img/rmbp-sm.png">
+                <div class="col-sm-4">
+                    <div class="float-box center">
+                        <i class="fa fa-envelope icon-c"></i>
+                        <div class="float-text">
+                            <h4>Email Us</h4>
+                            <p>
+                                <a href="mailto:sales@shinetechchina.com">sales@shinetechchina.com</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
+                <div class="col-sm-4">
+                    <div class="float-box center">
+                        <i class="fa fa-phone icon-c"></i>
+                        <div class="float-text">
+                            <h4>Phone Us</h4>
+                            <p>+01 234 567 890</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-
-    </section>
-
-    <section class="section text-center bg-grey">
-        <h2 class="big-title">Contact us, get a free advice</h2>
-        <p class="big-subtitle">We help you expand your business and enter new markets</p>
-        <div class="space-md"></div>
-        <a href="#" class="btn btn-success btn-xlg">Request a solution</a>
     </section>
 
     <section class="section-lg">
-        <div class="container">
+        <div class="container ">
+            <h2 class="big-title text-center">Request Your Solution</h2>
+            <p class="big-subtitle text-center">Curabitur bibendum justo non orci. Aenean id metus id velit ullamcorper pulvinar. Proin mattis lacinia justo. Duis bibendum, lectus ut viverra rhoncus, dolor nunc faucibus libero, eget facilisis enim ipsum id lacus.</p>
+            <div class="space"></div>
             <div class="row">
-                <!--fadeInLeft-->
-                <div class=" col-sm-6 wow fadeInLeft">
-                    <img class="img-mw450" src="assets/img/Showcase-Template-Flat-Presentation-Vol-3-portfolio.png" alt="Flat showcase presentation">
+                <div class="col-md-6 col-sm-7">
+
+                    <!-- Contact Form -->
+                    <div id="form-messages"></div>
+                    <form class="form-horizontal" role="form" id="ajax-contact" method="post" action="assets/php/mailer.php">
+                        <div class="form-group icon">
+                            <label for="name" class="col-sm-3 control-label">Full name</label>
+                            <div class="col-sm-9 ">
+                                <div class="control">
+                                    <input type="text" class="form-control" id="name" placeholder="Full name" name="name" required>
+                                    <i class="fa fa-user"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group icon">
+                            <label for="email" class="col-sm-3 control-label">Email</label>
+                            <div class="col-sm-9 ">
+                                <div class="control">
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group icon">
+                            <label for="phone" class="col-sm-3 control-label">Phone</label>
+                            <div class="col-sm-9 ">
+                                <div class="control">
+                                    <input type="phone" class="form-control" id="phone" placeholder="Enter phone" name="phone" required>
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group icon">
+                            <label for="Message" class="col-sm-3 control-label">Message</label>
+                            <div class="col-sm-9 ">
+                                <div class="control">
+                                    <textarea class="form-control" rows="8" id="Message" placeholder="Message" name="message" required></textarea>
+                                    <i class="fa fa-comment"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group icon">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fa fa-paper-plane-o"></i>Request Now!</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="space visible-xs"></div>
                 </div>
 
-                <div class="col-sm-6 wow fadeInRight">
-                  <h3>Wide area converage</h3>
-                  <p>Aliquam eget ante non quam sagittis mollis. In nec varius nisi, nec pharetra nisi</p>
-                  <p>. Curabitur ut est velit. Aenean at molestie sem a mattis tellus est sit amet neque.</p>
-                  <div class="space-sm"></div>
-                  <div class="space visible-xs"></div>
+                <div class="col-md-6 col-sm-5">
+                    <ul class="list-unstyled info-bar">
+                        <li>
+                            <h4>Additional info</h4>
+                            <p>If you have any questiong about our products or something else, please email us or call us. We'll get in touch with you as soon as possible.</p>
+                        </li>
+                        <li>
+                            <h4>Our Location</h4>
+                            <p>885 3rd Ave, NY 10022</p>
+                        </li>
+                        <li>
+                            <h4>Email Us</h4>
+                            <p>
+                                <a href="mailto:#">influence.bootstrap@gmail.com</a>
+                            </p>
+                        </li>
+                        <li>
+                            <h4>Business Hours</h4>
+                            <ul class="list-unstyled">
+                                <li>Mo - Fr: 9am to 6pm</li>
+                                <li>Sa, Su: 9am to 2pm</li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
-
-    <section class="section-lg bg-grey">
-        <div class="container">
-            <div class="row">
-                <!--fadeInLeft-->
-                <div class="col-sm-6 wow fadeInLeft">
-                  <h3>Find target clients</h3>
-                  <p>Aliquam eget ante non quam sagittis mollis. In nec varius nisi, nec pharetra nisi</p>
-                  <p>. Curabitur ut est velit. Aenean at molestie sem a mattis tellus est sit amet neque.</p>
-                  <div class="space-sm"></div>
-                  <div class="space visible-xs"></div>
-                </div>
-                <div class=" col-sm-6 wow fadeInRight">
-                    <img class="img-mw450" src="assets/img/Showcase-Template-Flat-Presentation-Vol-3-portfolio.png" alt="Flat showcase presentation">
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="section-lg">
-        <div class="container">
-            <div class="row">
-                <div class=" col-sm-6 wow fadeInLeft">
-                    <img class="img-mw450" src="assets/img/Showcase-Template-Flat-Presentation-Vol-3-portfolio.png" alt="Flat showcase presentation">
-                </div>
-                <div class="col-sm-6 wow fadeInRight">
-                  <h3>Increase the conversion</h3>
-                  <p>Aliquam eget ante non quam sagittis mollis. In nec varius nisi, nec pharetra nisi</p>
-                  <p>. Curabitur ut est velit. Aenean at molestie sem a mattis tellus est sit amet neque.</p>
-                  <div class="space-sm"></div>
-                  <div class="space visible-xs"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="section-lg bg-grey">
-        <div class="container">
-            <div class="row">
-                <!--fadeInLeft-->
-
-                <div class="col-sm-6 wow fadeInRight">
-                  <h3>Flexible content in Ads</h3>
-                  <p>Aliquam eget ante non quam sagittis mollis. In nec varius nisi, nec pharetra nisi</p>
-                  <p>. Curabitur ut est velit. Aenean at molestie sem a mattis tellus est sit amet neque.</p>
-                  <div class="space-sm"></div>
-                  <div class="space visible-xs"></div>
-                </div>
-                <div class=" col-sm-6 wow fadeInLeft">
-                    <img class="img-mw450" src="assets/img/Showcase-Template-Flat-Presentation-Vol-3-portfolio.png" alt="Flat showcase presentation">
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!--===/END    MAIN WRAP     ===-->
 
 
